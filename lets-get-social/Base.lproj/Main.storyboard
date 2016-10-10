@@ -17,11 +17,126 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="GFr-2z-tH2"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="185" translatesAutoresizingMaskIntoConstraints="NO" id="rb1-BU-7u5">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-4" translatesAutoresizingMaskIntoConstraints="NO" id="0Cj-CJ-42w">
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="cmV-8F-Mye">
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChockuhblockLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Pdh-ce-dba">
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="79" id="jaI-0K-DU3"/>
+                                                            <constraint firstAttribute="height" constant="50" id="ztR-wl-rrY"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CHUCKLEBLOK" translatesAutoresizingMaskIntoConstraints="NO" id="CmV-8o-VJJ"/>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="93" id="gHJ-Uv-x9x"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="sON-wX-42h">
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Where funny gathers." translatesAutoresizingMaskIntoConstraints="NO" id="iXb-SM-mvw">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="18" id="YNQ-az-wEx"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="log-oq-exq">
+                                                        <fontDescription key="fontDescription" name="PingFangHK-Light" family="PingFang HK" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="125" id="L44-Si-Ubj"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="der-Uy-avr">
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bxB-1U-DjJ">
+                                                <color key="backgroundColor" red="1" green="0.056389555335044861" blue="0.59417086839675903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="PingFangHK-Light" family="PingFang HK" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="COq-gp-R8H">
+                                                <color key="backgroundColor" red="1" green="0.056389555335044861" blue="0.59417086839675903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="PingFangHK-Light" family="PingFang HK" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNn-B4-YNU">
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="PingFangHK-Medium" family="PingFang HK" pointSize="16"/>
+                                                <state key="normal" title="Sign In">
+                                                    <color key="titleColor" red="1" green="0.24705882352941178" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="BHe-XI-RLE"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erx-8f-yf3">
+                                <color key="backgroundColor" red="0.35746031999588013" green="0.44050151109695435" blue="0.69715481996536255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="2tv-S2-SD7"/>
+                                    <constraint firstAttribute="height" constant="90" id="cDY-I0-4GP"/>
+                                </constraints>
+                                <state key="normal" image="f"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7E-GA-kV9">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you havn't signed in before, an account will be automatically created for you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OOO-kB-rF9">
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="1" green="0.24705882352941178" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="OOO-kB-rF9" firstAttribute="leading" secondItem="S7E-GA-kV9" secondAttribute="leading" constant="8" id="aUa-Pa-fL0"/>
+                                    <constraint firstAttribute="trailing" secondItem="OOO-kB-rF9" secondAttribute="trailing" constant="8" id="cpp-GN-ojT"/>
+                                    <constraint firstAttribute="bottom" secondItem="OOO-kB-rF9" secondAttribute="bottom" constant="8" id="lgw-hx-XDS"/>
+                                    <constraint firstItem="OOO-kB-rF9" firstAttribute="top" secondItem="S7E-GA-kV9" secondAttribute="top" constant="8" id="mGi-Ol-oaq"/>
+                                    <constraint firstAttribute="height" constant="80" id="tRk-Kp-Dd3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S7E-GA-kV9" secondAttribute="bottom" id="1km-dt-OBD"/>
+                            <constraint firstItem="GFr-2z-tH2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="27c-tW-IKU"/>
+                            <constraint firstItem="S7E-GA-kV9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FAC-4k-5IY"/>
+                            <constraint firstAttribute="trailing" secondItem="GFr-2z-tH2" secondAttribute="trailing" id="NfL-TC-I6p"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GFr-2z-tH2" secondAttribute="bottom" id="Shl-SK-mUa"/>
+                            <constraint firstAttribute="trailing" secondItem="S7E-GA-kV9" secondAttribute="trailing" id="WyA-cV-yUr"/>
+                            <constraint firstItem="GFr-2z-tH2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iaK-FX-9vs"/>
+                            <constraint firstItem="rb1-BU-7u5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="33" id="q5a-kh-qg4"/>
+                            <constraint firstAttribute="trailing" secondItem="rb1-BU-7u5" secondAttribute="trailing" constant="33" id="sPh-JH-Iew"/>
+                            <constraint firstItem="erx-8f-yf3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="179" id="sV4-SZ-wni"/>
+                            <constraint firstItem="rb1-BU-7u5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="ubj-sb-xcU"/>
+                            <constraint firstItem="erx-8f-yf3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zCo-4Y-mbZ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="135.38230884557723"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CHUCKLEBLOK" width="277" height="46"/>
+        <image name="ChockuhblockLogo" width="89" height="109"/>
+        <image name="Where funny gathers." width="153" height="17"/>
+        <image name="bg2" width="750" height="1334"/>
+        <image name="f" width="352" height="328"/>
+    </resources>
 </document>

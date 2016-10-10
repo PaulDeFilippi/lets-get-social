@@ -50,6 +50,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4F413A021DA9DF70001281D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F4E0CB01DA5FB6D00767E67 /* Assets.xcassets */,
+				4F4E0CB51DA5FB6D00767E67 /* Info.plist */,
+				4F4E0CBB1DA5FC5A00767E67 /* GoogleService-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		4F4E0C9D1DA5FB6D00767E67 = {
 			isa = PBXGroup;
 			children = (
@@ -71,15 +81,10 @@
 		4F4E0CA81DA5FB6D00767E67 /* lets-get-social */ = {
 			isa = PBXGroup;
 			children = (
-				4F4E0CBF1DA602CC00767E67 /* Controller */,
-				4F4E0CBE1DA602C300767E67 /* VIew */,
 				4F4E0CBD1DA602B800767E67 /* Model */,
-				4F4E0CA91DA5FB6D00767E67 /* AppDelegate.swift */,
-				4F4E0CAD1DA5FB6D00767E67 /* Main.storyboard */,
-				4F4E0CB01DA5FB6D00767E67 /* Assets.xcassets */,
-				4F4E0CB21DA5FB6D00767E67 /* LaunchScreen.storyboard */,
-				4F4E0CB51DA5FB6D00767E67 /* Info.plist */,
-				4F4E0CBB1DA5FC5A00767E67 /* GoogleService-Info.plist */,
+				4F4E0CBE1DA602C300767E67 /* VIew */,
+				4F4E0CBF1DA602CC00767E67 /* Controller */,
+				4F413A021DA9DF70001281D7 /* Resources */,
 			);
 			path = "lets-get-social";
 			sourceTree = "<group>";
@@ -94,6 +99,8 @@
 		4F4E0CBE1DA602C300767E67 /* VIew */ = {
 			isa = PBXGroup;
 			children = (
+				4F4E0CAD1DA5FB6D00767E67 /* Main.storyboard */,
+				4F4E0CB21DA5FB6D00767E67 /* LaunchScreen.storyboard */,
 			);
 			name = VIew;
 			sourceTree = "<group>";
@@ -101,6 +108,7 @@
 		4F4E0CBF1DA602CC00767E67 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4F4E0CA91DA5FB6D00767E67 /* AppDelegate.swift */,
 				4F4E0CAB1DA5FB6D00767E67 /* SignInVC.swift */,
 			);
 			name = Controller;
