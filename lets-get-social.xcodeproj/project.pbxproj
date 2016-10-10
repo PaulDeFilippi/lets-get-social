@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		343FBEA0916AD0C6A71088E1 /* Pods_lets_get_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4D5DB06555B8EC23E61B91 /* Pods_lets_get_social.framework */; };
+		4F3F72EA1DAB57F100BA3B76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72E91DAB57F100BA3B76 /* Constants.swift */; };
+		4F3F72EC1DAB5A8800BA3B76 /* FXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72EB1DAB5A8800BA3B76 /* FXView.swift */; };
+		4F3F72EE1DAB5BCC00BA3B76 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72ED1DAB5BCC00BA3B76 /* RoundBtn.swift */; };
+		4F3F72F01DAB5E5B00BA3B76 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72EF1DAB5E5B00BA3B76 /* FancyField.swift */; };
+		4F3F72F21DAB60C100BA3B76 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72F11DAB60C100BA3B76 /* FancyButton.swift */; };
 		4F4E0CAA1DA5FB6D00767E67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E0CA91DA5FB6D00767E67 /* AppDelegate.swift */; };
 		4F4E0CAC1DA5FB6D00767E67 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E0CAB1DA5FB6D00767E67 /* SignInVC.swift */; };
 		4F4E0CAF1DA5FB6D00767E67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4E0CAD1DA5FB6D00767E67 /* Main.storyboard */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F3F72E91DAB57F100BA3B76 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4F3F72EB1DAB5A8800BA3B76 /* FXView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FXView.swift; sourceTree = "<group>"; };
+		4F3F72ED1DAB5BCC00BA3B76 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		4F3F72EF1DAB5E5B00BA3B76 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		4F3F72F11DAB60C100BA3B76 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		4F4E0CA61DA5FB6D00767E67 /* lets-get-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lets-get-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F4E0CA91DA5FB6D00767E67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F4E0CAB1DA5FB6D00767E67 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -50,6 +60,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4F3F72E81DAB57D200BA3B76 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4F3F72E91DAB57F100BA3B76 /* Constants.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		4F413A021DA9DF70001281D7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +99,7 @@
 		4F4E0CA81DA5FB6D00767E67 /* lets-get-social */ = {
 			isa = PBXGroup;
 			children = (
+				4F3F72E81DAB57D200BA3B76 /* Utilities */,
 				4F4E0CBD1DA602B800767E67 /* Model */,
 				4F4E0CBE1DA602C300767E67 /* VIew */,
 				4F4E0CBF1DA602CC00767E67 /* Controller */,
@@ -101,6 +120,10 @@
 			children = (
 				4F4E0CAD1DA5FB6D00767E67 /* Main.storyboard */,
 				4F4E0CB21DA5FB6D00767E67 /* LaunchScreen.storyboard */,
+				4F3F72EB1DAB5A8800BA3B76 /* FXView.swift */,
+				4F3F72ED1DAB5BCC00BA3B76 /* RoundBtn.swift */,
+				4F3F72EF1DAB5E5B00BA3B76 /* FancyField.swift */,
+				4F3F72F11DAB60C100BA3B76 /* FancyButton.swift */,
 			);
 			name = VIew;
 			sourceTree = "<group>";
@@ -248,8 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F3F72F01DAB5E5B00BA3B76 /* FancyField.swift in Sources */,
+				4F3F72EC1DAB5A8800BA3B76 /* FXView.swift in Sources */,
+				4F3F72EE1DAB5BCC00BA3B76 /* RoundBtn.swift in Sources */,
+				4F3F72F21DAB60C100BA3B76 /* FancyButton.swift in Sources */,
 				4F4E0CAC1DA5FB6D00767E67 /* SignInVC.swift in Sources */,
 				4F4E0CAA1DA5FB6D00767E67 /* AppDelegate.swift in Sources */,
+				4F3F72EA1DAB57F100BA3B76 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
