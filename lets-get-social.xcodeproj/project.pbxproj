@@ -27,6 +27,7 @@
 		4F3F72ED1DAB5BCC00BA3B76 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		4F3F72EF1DAB5E5B00BA3B76 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		4F3F72F11DAB60C100BA3B76 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		4F3F72F31DAC929300BA3B76 /* lets-get-social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "lets-get-social.entitlements"; sourceTree = "<group>"; };
 		4F4E0CA61DA5FB6D00767E67 /* lets-get-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lets-get-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F4E0CA91DA5FB6D00767E67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F4E0CAB1DA5FB6D00767E67 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		4F4E0CA81DA5FB6D00767E67 /* lets-get-social */ = {
 			isa = PBXGroup;
 			children = (
+				4F3F72F31DAC929300BA3B76 /* lets-get-social.entitlements */,
 				4F3F72E81DAB57D200BA3B76 /* Utilities */,
 				4F4E0CBD1DA602B800767E67 /* Model */,
 				4F4E0CBE1DA602C300767E67 /* VIew */,
@@ -183,6 +185,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = V7Q65FMKJ4;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -399,6 +406,7 @@
 			baseConfigurationReference = A28B9FA6D28045BE913ECF66 /* Pods-lets-get-social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "lets-get-social/lets-get-social.entitlements";
 				DEVELOPMENT_TEAM = V7Q65FMKJ4;
 				INFOPLIST_FILE = "lets-get-social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -413,6 +421,7 @@
 			baseConfigurationReference = BDD23683588D90590B624C93 /* Pods-lets-get-social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "lets-get-social/lets-get-social.entitlements";
 				DEVELOPMENT_TEAM = V7Q65FMKJ4;
 				INFOPLIST_FILE = "lets-get-social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

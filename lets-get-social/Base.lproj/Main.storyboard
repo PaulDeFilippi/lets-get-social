@@ -91,6 +91,9 @@
                                     <constraint firstAttribute="height" constant="90" id="cDY-I0-4GP"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
+                                <connections>
+                                    <action selector="facebookBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sid-5I-Fs2"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7E-GA-kV9">
                                 <subviews>
