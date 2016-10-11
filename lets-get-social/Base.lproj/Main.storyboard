@@ -68,7 +68,7 @@
                                                 <color key="backgroundColor" red="1" green="0.056389555335044861" blue="0.59417086839675903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="PingFangHK-Light" family="PingFang HK" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNn-B4-YNU" customClass="FancyButton" customModule="lets_get_social" customModuleProvider="target">
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -76,6 +76,9 @@
                                                 <state key="normal" title="Sign In">
                                                     <color key="titleColor" red="1" green="0.24705882352941178" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YmW-kW-ix8"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -129,6 +132,10 @@
                             <constraint firstItem="erx-8f-yf3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zCo-4Y-mbZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="bxB-1U-DjJ" id="HJK-gk-O0D"/>
+                        <outlet property="passwordField" destination="COq-gp-R8H" id="P1H-mI-Jr9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
