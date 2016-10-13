@@ -15,6 +15,7 @@
 		4F3F72F21DAB60C100BA3B76 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72F11DAB60C100BA3B76 /* FancyButton.swift */; };
 		4F3F72F51DAD977A00BA3B76 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72F41DAD977A00BA3B76 /* FeedVC.swift */; };
 		4F3F72F91DADFCFE00BA3B76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3F72F81DADFCFE00BA3B76 /* Main.storyboard */; };
+		4F3F72FB1DAF231D00BA3B76 /* CIrcleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F72FA1DAF231D00BA3B76 /* CIrcleView.swift */; };
 		4F4E0CAA1DA5FB6D00767E67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E0CA91DA5FB6D00767E67 /* AppDelegate.swift */; };
 		4F4E0CAC1DA5FB6D00767E67 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E0CAB1DA5FB6D00767E67 /* SignInVC.swift */; };
 		4F4E0CB11DA5FB6D00767E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4E0CB01DA5FB6D00767E67 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		4F3F72F31DAC929300BA3B76 /* lets-get-social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "lets-get-social.entitlements"; sourceTree = "<group>"; };
 		4F3F72F41DAD977A00BA3B76 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		4F3F72F81DADFCFE00BA3B76 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4F3F72FA1DAF231D00BA3B76 /* CIrcleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIrcleView.swift; sourceTree = "<group>"; };
 		4F4E0CA61DA5FB6D00767E67 /* lets-get-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lets-get-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F4E0CA91DA5FB6D00767E67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F4E0CAB1DA5FB6D00767E67 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				4F3F72ED1DAB5BCC00BA3B76 /* RoundBtn.swift */,
 				4F3F72EF1DAB5E5B00BA3B76 /* FancyField.swift */,
 				4F3F72F11DAB60C100BA3B76 /* FancyButton.swift */,
+				4F3F72FA1DAF231D00BA3B76 /* CIrcleView.swift */,
 			);
 			name = VIew;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				4F3F72F51DAD977A00BA3B76 /* FeedVC.swift in Sources */,
 				4F4E0CAC1DA5FB6D00767E67 /* SignInVC.swift in Sources */,
 				4F4E0CAA1DA5FB6D00767E67 /* AppDelegate.swift in Sources */,
+				4F3F72FB1DAF231D00BA3B76 /* CIrcleView.swift in Sources */,
 				4F3F72EA1DAB57F100BA3B76 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

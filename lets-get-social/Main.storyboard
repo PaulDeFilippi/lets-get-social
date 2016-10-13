@@ -154,19 +154,159 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOm-PR-CaR">
-                                <state key="normal" title="Sign Out">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="signOutTapped:" destination="EAP-51-tCS" eventType="touchUpInside" id="oZ2-E3-dBp"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSj-x9-YBx" customClass="FXView" customModule="lets_get_social" customModuleProvider="target">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="y7o-f2-MN2">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="dsO-Uv-FJA"/>
+                                            <constraint firstAttribute="height" constant="34" id="nON-cr-Br4"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHUCKLEBLOK FEED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vad-Hv-7en">
+                                        <fontDescription key="fontDescription" name="PingFangHK-Medium" family="PingFang HK" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.1279938817024231" blue="0.29321089386940002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="y7o-f2-MN2" firstAttribute="top" secondItem="oSj-x9-YBx" secondAttribute="top" constant="20" id="0vH-Zr-rCC"/>
+                                    <constraint firstItem="y7o-f2-MN2" firstAttribute="leading" secondItem="oSj-x9-YBx" secondAttribute="leading" constant="16" id="4IG-qu-e8I"/>
+                                    <constraint firstItem="Vad-Hv-7en" firstAttribute="centerY" secondItem="y7o-f2-MN2" secondAttribute="centerY" id="CcO-I0-dGK"/>
+                                    <constraint firstItem="Vad-Hv-7en" firstAttribute="centerX" secondItem="oSj-x9-YBx" secondAttribute="centerX" id="lvS-hR-Vvw"/>
+                                    <constraint firstAttribute="height" constant="65" id="qaS-WT-Fbm"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egL-vm-nuh" customClass="FXView" customModule="lets_get_social" customModuleProvider="target">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aut-bs-YMm">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="9C5-Ij-187" customClass="CIrcleView" customModule="lets_get_social" customModuleProvider="target">
+                                                <color key="backgroundColor" red="0.92941176470588238" green="0.9137254901960784" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="49" id="DIV-2n-N1M"/>
+                                                    <constraint firstAttribute="height" constant="49" id="v9N-1l-Iqb"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eR0-69-eBO" customClass="FancyField" customModule="lets_get_social" customModuleProvider="target">
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8a-VY-LA3" customClass="RoundBtn" customModule="lets_get_social" customModuleProvider="target">
+                                                <color key="backgroundColor" red="0.14900019764900208" green="0.29364082217216492" blue="0.48892253637313843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="49" id="UoD-du-e07"/>
+                                                    <constraint firstAttribute="width" constant="49" id="fRM-0V-pIt"/>
+                                                </constraints>
+                                                <state key="normal" image="add-post"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80343037843704224" green="0.84853881597518921" blue="0.86479991674423218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="aut-bs-YMm" firstAttribute="top" secondItem="egL-vm-nuh" secondAttribute="top" constant="8" id="HIk-9E-DVf"/>
+                                    <constraint firstAttribute="trailing" secondItem="aut-bs-YMm" secondAttribute="trailing" constant="8" id="IR5-AL-lft"/>
+                                    <constraint firstItem="aut-bs-YMm" firstAttribute="leading" secondItem="egL-vm-nuh" secondAttribute="leading" constant="8" id="OoN-Hh-FY5"/>
+                                    <constraint firstAttribute="bottom" secondItem="aut-bs-YMm" secondAttribute="bottom" constant="8" id="XXm-82-tl8"/>
+                                    <constraint firstAttribute="height" constant="65" id="vqg-hW-3Pp"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="358" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QtK-ms-pDW">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="358" id="hEe-Zv-c8w">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="358"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hEe-Zv-c8w" id="z8x-HJ-LCz">
+                                            <frame key="frameInset" width="375" height="357"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kao-sw-V7r" customClass="FXView" customModule="lets_get_social" customModuleProvider="target">
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9ei-Zb-N8n">
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e76-cq-NJY">
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="KAM-Es-rnQ" customClass="CIrcleView" customModule="lets_get_social" customModuleProvider="target">
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="70" id="LOU-CJ-re1"/>
+                                                                                <constraint firstAttribute="height" constant="70" id="oPX-gL-fn8"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SpoonMan808" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VL-2s-7gJ">
+                                                                            <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="17"/>
+                                                                            <color key="textColor" red="0.998890221118927" green="0.24702706933021545" blue="0.60304391384124756" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="drc-UO-xZR" customClass="CIrcleView" customModule="lets_get_social" customModuleProvider="target">
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="70" id="DoI-A8-ZEA"/>
+                                                                                <constraint firstAttribute="width" constant="70" id="x3Z-R3-S2j"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="nx1-bn-432"/>
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cMa-sG-b1z">
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                </textView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0fx-j1-eLU">
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0q-an-5Df">
+                                                                    <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="16"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.56509524828767121" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akl-81-916">
+                                                                    <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="16"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.56509524830000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="9ei-Zb-N8n" firstAttribute="leading" secondItem="Kao-sw-V7r" secondAttribute="leading" constant="8" id="48S-A2-Beu"/>
+                                                        <constraint firstAttribute="bottom" secondItem="9ei-Zb-N8n" secondAttribute="bottom" constant="40" id="4t9-YY-llO"/>
+                                                        <constraint firstAttribute="trailing" secondItem="0fx-j1-eLU" secondAttribute="trailing" constant="8" id="NtU-2N-wR6"/>
+                                                        <constraint firstItem="9ei-Zb-N8n" firstAttribute="top" secondItem="Kao-sw-V7r" secondAttribute="top" constant="8" id="bR5-jH-wrB"/>
+                                                        <constraint firstAttribute="bottom" secondItem="0fx-j1-eLU" secondAttribute="bottom" constant="8" id="fgW-lf-shJ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="9ei-Zb-N8n" secondAttribute="trailing" constant="8" id="oeP-jQ-opa"/>
+                                                        <constraint firstItem="0fx-j1-eLU" firstAttribute="top" secondItem="9ei-Zb-N8n" secondAttribute="bottom" constant="8" id="pvW-rc-fmF"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Kao-sw-V7r" firstAttribute="top" secondItem="z8x-HJ-LCz" secondAttribute="top" constant="8" id="6tf-X2-lF1"/>
+                                                <constraint firstAttribute="bottom" secondItem="Kao-sw-V7r" secondAttribute="bottom" constant="8" id="dpr-Lg-QRg"/>
+                                                <constraint firstItem="Kao-sw-V7r" firstAttribute="leading" secondItem="z8x-HJ-LCz" secondAttribute="leading" constant="16" id="k13-Wg-C4h"/>
+                                                <constraint firstAttribute="trailing" secondItem="Kao-sw-V7r" secondAttribute="trailing" constant="16" id="st1-U3-maZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.72638976573944092" green="0.0772089883685112" blue="0.4848487377166748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.72549019607843135" green="0.078431372549019607" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="cOm-PR-CaR" firstAttribute="centerY" secondItem="1cH-fM-GwP" secondAttribute="centerY" id="nPT-tH-q62"/>
-                            <constraint firstItem="cOm-PR-CaR" firstAttribute="centerX" secondItem="1cH-fM-GwP" secondAttribute="centerX" id="tGb-X7-gjH"/>
+                            <constraint firstItem="a4W-1s-myR" firstAttribute="top" secondItem="QtK-ms-pDW" secondAttribute="bottom" id="1Sq-dq-Nd3"/>
+                            <constraint firstItem="oSj-x9-YBx" firstAttribute="top" secondItem="1cH-fM-GwP" secondAttribute="top" id="FV2-fM-8Jt"/>
+                            <constraint firstItem="egL-vm-nuh" firstAttribute="top" secondItem="oSj-x9-YBx" secondAttribute="bottom" constant="16" id="Izn-ZR-63Y"/>
+                            <constraint firstItem="QtK-ms-pDW" firstAttribute="leading" secondItem="1cH-fM-GwP" secondAttribute="leading" id="YVw-Wd-mTz"/>
+                            <constraint firstAttribute="trailing" secondItem="egL-vm-nuh" secondAttribute="trailing" constant="16" id="ckU-ol-t3T"/>
+                            <constraint firstAttribute="trailing" secondItem="oSj-x9-YBx" secondAttribute="trailing" id="jWG-QA-2yR"/>
+                            <constraint firstAttribute="trailing" secondItem="QtK-ms-pDW" secondAttribute="trailing" id="l9o-mS-bTW"/>
+                            <constraint firstItem="oSj-x9-YBx" firstAttribute="leading" secondItem="1cH-fM-GwP" secondAttribute="leading" id="mVY-gR-TER"/>
+                            <constraint firstItem="QtK-ms-pDW" firstAttribute="top" secondItem="egL-vm-nuh" secondAttribute="bottom" constant="16" id="oBO-NL-tXq"/>
+                            <constraint firstItem="egL-vm-nuh" firstAttribute="leading" secondItem="1cH-fM-GwP" secondAttribute="leading" constant="16" id="xBK-m6-EA9"/>
                         </constraints>
                     </view>
                     <connections>
@@ -175,14 +315,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="skI-zi-72D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="873" y="135"/>
+            <point key="canvasLocation" x="872.79999999999995" y="134.48275862068968"/>
         </scene>
     </scenes>
     <resources>
         <image name="CHUCKLEBLOK" width="277" height="46"/>
         <image name="ChockuhblockLogo" width="89" height="109"/>
         <image name="Where funny gathers." width="153" height="17"/>
+        <image name="add-image" width="88" height="88"/>
+        <image name="add-post" width="88" height="88"/>
         <image name="bg2" width="750" height="1334"/>
+        <image name="empty-heart" width="70" height="70"/>
         <image name="f" width="352" height="328"/>
+        <image name="placeholder" width="567" height="312"/>
+        <image name="profile" width="113" height="155"/>
+        <image name="sign-out" width="92" height="65"/>
     </resources>
 </document>

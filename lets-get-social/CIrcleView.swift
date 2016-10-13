@@ -1,14 +1,14 @@
 //
-//  FXView.swift
+//  CIrcleView.swift
 //  lets-get-social
 //
-//  Created by Paul Defilippi on 10/10/16.
+//  Created by Paul Defilippi on 10/12/16.
 //  Copyright © 2016 Paul Defilippi. All rights reserved.
 //
 
 import UIKit
 
-class FXView: UIView {
+class CIrcleView: UIImageView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,7 +17,14 @@ class FXView: UIView {
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        layer.cornerRadius = 2.0
         
     }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        layer.cornerRadius = self.frame.width / 2
+        
+    }
+
 }
