@@ -156,11 +156,15 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSj-x9-YBx" customClass="FXView" customModule="lets_get_social" customModuleProvider="target">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="y7o-f2-MN2">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="y7o-f2-MN2">
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="dsO-Uv-FJA"/>
                                             <constraint firstAttribute="height" constant="34" id="nON-cr-Br4"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="QMB-XI-Tr1" appends="YES" id="8dx-e9-jZs"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHUCKLEBLOK FEED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vad-Hv-7en">
                                         <fontDescription key="fontDescription" name="PingFangHK-Medium" family="PingFang HK" pointSize="22"/>
@@ -326,6 +330,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="skI-zi-72D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QMB-XI-Tr1">
+                    <connections>
+                        <action selector="signOutTapped:" destination="EAP-51-tCS" id="M0K-Va-fds"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="872.79999999999995" y="134.48275862068968"/>
         </scene>
