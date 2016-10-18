@@ -13,10 +13,9 @@ import SwiftKeychainWrapper
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var addImageTapped: CIrcleView!
-    
     @IBOutlet weak var captionField: FancyField!
+    
     
     
     
@@ -72,11 +71,12 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             
             if let img = FeedVC.imageCache.object(forKey: post.imageUrl as NSString) {
                 cell.configureCell(post: post, img: img)
-                return cell
+                
             } else {
                 cell.configureCell(post: post)
-                return cell
+                
             }
+            return cell
             
         } else {
             return PostCell()
@@ -122,13 +122,34 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                     print("PAUL: Unable to upload image to Firebase storage")
                 } else {
                     print("PAUL: Successfully uploaded image to Firebase storage")
-                    let dowloadURL = metaData?.downloadURL()?.absoluteString
+                    let downloadURL = metaData?.downloadURL()?.absoluteString
+                    
+                    if let url = downloadURL {
+                        self.postToFirebase(imgUrl: url)
+                    }
                 }
                 
             }
         }
         
         
+    }
+    
+    func postToFirebase(imgUrl: String) {
+        let post: Dictionary<String, Any> = [
+            "caption": captionField.text! as String,
+            "imageUrl": imgUrl as String,
+            "likes": 0 as Int
+        ]
+        
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
+        
+        captionField.text = ""
+        imageSelected = false
+        addImageTapped.image = UIImage(named: "add-image")
+        
+        tableView.reloadData()
     }
     
 

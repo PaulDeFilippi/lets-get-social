@@ -46,6 +46,7 @@
 		4F4E0CB31DA5FB6D00767E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F4E0CB51DA5FB6D00767E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F4E0CBB1DA5FC5A00767E67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F953ABA1DB57F5B0037A8A3 /* 39smooth.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 39smooth.ttf; sourceTree = "<group>"; };
 		7B4D5DB06555B8EC23E61B91 /* Pods_lets_get_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lets_get_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28B9FA6D28045BE913ECF66 /* Pods-lets-get-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lets-get-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lets-get-social/Pods-lets-get-social.debug.xcconfig"; sourceTree = "<group>"; };
 		BDD23683588D90590B624C93 /* Pods-lets-get-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lets-get-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-lets-get-social/Pods-lets-get-social.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +101,7 @@
 		4F4E0C9D1DA5FB6D00767E67 = {
 			isa = PBXGroup;
 			children = (
+				4F953ABA1DB57F5B0037A8A3 /* 39smooth.ttf */,
 				4F4E0CA81DA5FB6D00767E67 /* lets-get-social */,
 				4F4E0CA71DA5FB6D00767E67 /* Products */,
 				D4CE6D529CD667BC8238126E /* Pods */,
