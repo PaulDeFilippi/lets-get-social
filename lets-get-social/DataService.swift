@@ -51,6 +51,4 @@ class DataService {
         REF_USERS.child(uid).updateChildValues(userData)
     }
     
-    
-    
 }
